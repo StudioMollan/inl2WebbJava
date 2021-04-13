@@ -7,7 +7,7 @@ public class ProdDto implements Serializable {
 
     private String productId, name;
 
-    private int cost;
+    private Integer cost;
 
     private String category;
 
@@ -37,11 +37,11 @@ public class ProdDto implements Serializable {
         this.name = name;
     }
 
-    public int getCost() {
+    public Integer getCost() {
         return cost;
     }
 
-    public void setCost(int cost) {
+    public void setCost(Integer cost) {
         this.cost = cost;
     }
 

@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
 
 @Component
 public class Util {
@@ -11,7 +12,7 @@ public class Util {
         try {
             MessageDigest hashFunc = MessageDigest.getInstance("SHA3-256");
             byte[] digest = hashFunc.digest(uniqueProperty.getBytes());
-            return digest.toString();
+            return Arrays.toString(digest);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
             return "";

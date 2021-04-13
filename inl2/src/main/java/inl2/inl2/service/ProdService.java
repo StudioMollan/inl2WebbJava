@@ -2,6 +2,7 @@ package Inl2.inl2.service;
 
 import Inl2.inl2.shared.dto.ProdDto;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface ProdService {
@@ -10,10 +11,12 @@ public interface ProdService {
 
     Optional<ProdDto> getProdById(String id);
 
-    ProdDto createProd(ProdDto userDetails);
+    ProdDto createProd(ProdDto prodDetails);
 
-    String updateProd();
+    Optional<ProdDto> updateProd(String id, ProdDto prodDto);
 
-    String deleteProd();
+    boolean deleteProd(String id);
+
+    List<ProdDto> getProducts();
 
 }

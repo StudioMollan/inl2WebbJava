@@ -25,8 +25,7 @@ public class ProdEntity implements Serializable {
     @Column(length=120, nullable = false, unique = true)
     private String category;    // was email
 
-//    @Column
-//    private String encryptedPassword;
+   private String encryptedPassword;
 
     public long getId() {
         return id;
@@ -68,11 +67,5 @@ public class ProdEntity implements Serializable {
         this.category = category;
     }
 
-//    public String getEncryptedPassword() {
-//        return encryptedPassword;
-//    }
-//
-//    public void setEncryptedPassword(String encryptedPassword) {
-//        this.encryptedPassword = encryptedPassword;
-//    }
+
 }

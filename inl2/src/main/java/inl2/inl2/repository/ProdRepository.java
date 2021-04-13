@@ -10,4 +10,5 @@ import java.util.Optional;
 public interface ProdRepository extends CrudRepository<ProdEntity, Long> {
     Optional<ProdEntity> findByEmail(String email);
     Optional<ProdEntity> findByProdId(String email);
+    Long deleteByProdId(String productId);
 }
